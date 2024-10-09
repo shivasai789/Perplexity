@@ -1,0 +1,208 @@
+.banner-img{
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  cursor: zoom-in;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.banner-img:hover{
+  scale: 1.03;
+}
+
+.follow-up-container{
+  background-color: #202222;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  width: 41%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.follow-up{
+  border: 1px solid #878c8c;
+  height: 60px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow-input{
+  background-color: transparent;
+  border: 0px;
+  color: #878c8c;
+  outline: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px ;
+  height: 34px;
+  margin-right: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #202222;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid white;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #878c8c;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #878c8c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.logo-image2{
+  width: 130px;
+  visibility: hidden;
+}
+
+.profile-image2{
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 8px;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  padding: 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  border-left: 2px solid #878c8c;
+  padding-left: 10px;
+}
+
+.sidebar li a{
+  color: #878c8c;
+}
+
+.sidebar li.active{
+  border-left: 2px solid white;
+}
+
+.sidebar li.active a {
+  
+  color: white;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content area */
+.content {
+  /* padding: 20px; */
+}
+
+.content-section {
+  /* margin-bottom: 50vh; */
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px){
+  .logo-image2{
+    visibility: visible;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .follow-up-container{
+    width: 93%;
+  }
+}

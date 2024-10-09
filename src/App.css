@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-container{
+  background-color: #202222;
+  max-height: 100vh;
+  margin: 0px;
+}
+
+

@@ -1,0 +1,34 @@
+.tab-item1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.tab-item1 p {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.active-tab {
+    
+    background-color: #192a2c;
+    margin: 0px;
+}
+
+.active-tab p {
+    color: #20b2c6;
+    margin: 0px;
+}
+
+@media (max-width: 1087px){
+    .tab-item1 p {
+        display: none;
+    }
+}
